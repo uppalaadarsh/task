@@ -1,0 +1,258 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia; }
+
+::placeholder {
+  color: #darkgrey;
+  font-size: 15px; }
+
+.form-control {
+  border-radius: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+input:focus {
+  ouline: none !important; }
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  height: 2px; }
+
+@media query and (min-width: 1200px) {
+  .container-fluid {
+    width: 1000px;
+    margin: 0 auto; } }
+
+.btn-submit {
+  color: #ffffff;
+  background: #D54346;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: relative;
+  padding-right: 19px;
+  margin-top: 20px; }
+  .btn-submit:after {
+    position: absolute;
+    content: '>>';
+    right: 4px;
+    font-size: 10px;
+    top: 7px; }
+
+.logo-section {
+  display: inline-flex;
+  width: 100%;
+  padding: 40px 0px; }
+  .logo-section .input-group {
+    width: 30%; }
+    .logo-section .input-group .btn-search {
+      border-radius: 0; }
+  .logo-section .logo {
+    position: relative;
+    width: 50%; }
+    .logo-section .logo:before {
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 40px;
+      background-color: #D54346;
+      z-index: -1;
+      top: 7%;
+      border-radius: 50%;
+      left: -4px; }
+    .logo-section .logo .logo-text {
+      font-family: Georgia;
+      display: inline-block;
+      line-height: 24px;
+      vertical-align: bottom;
+      height: 22px;
+      font-size: 12px;
+      color: #B2B2B2;
+      padding-left: 11px;
+      border-left: 1px solid #B2B2B2;
+      margin-left: 23px; }
+      @media only screen and (max-width: 640px) {
+        .logo-section .logo .logo-text {
+          border-left: none; } }
+      @media only screen and (max-width: 320px) {
+        .logo-section .logo .logo-text {
+          font-size: 8px; } }
+  @media screen and (min-width: 320px) {
+    .logo-section .logo-section .btn {
+      font-size: 10px; } }
+  .logo-section .btn-submit {
+    margin-top: 0;
+    height: 38px;
+    border-radius: 0; }
+    .logo-section .btn-submit:after {
+      display: none; }
+
+.carousel {
+  margin-top: 40px; }
+
+.navbar {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+    border-right: 1px solid #B2B2B2;
+    padding-right: 11px;
+    padding-left: 11px; }
+    .navbar .navbar-nav .nav-item:first-child {
+      padding-left: 0; }
+      .navbar .navbar-nav .nav-item:first-child .nav-link sub {
+        left: 9px; }
+    .navbar .navbar-nav .nav-item sub {
+      position: absolute;
+      bottom: 4px;
+      left: 19px;
+      color: #B2B2B2;
+      font-size: 12px;
+      text-transform: lowercase; }
+    .navbar .navbar-nav .nav-item .nav-link {
+      color: #333333;
+      text-transform: uppercase;
+      font-size: 12px; }
+  .navbar .ml-auto .nav-item {
+    padding-left: 3px;
+    padding-right: 3px;
+    border: none; }
+    .navbar .ml-auto .nav-item a .fa {
+      background: #000000;
+      color: #ffffff;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .navbar .ml-auto .nav-item a .fa:hover:before {
+        color: #EE802F; }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      background-color: #D54346; }
+      .navbar .navbar-toggler {
+        width: 100%;
+        text-align: right;
+        border: none; }
+      .navbar .collapse.show {
+        text-align: center; }
+      .navbar .navbar .navbar-nav .nav-item .nav-link {
+        left: 46%; } }
+
+.profile {
+  padding: 50px 0px; }
+  .profile .image-info .user-name {
+    color: #B2B2B2;
+    font-size: 13px; }
+  .profile .image-info .view-profile {
+    color: #D54346;
+    font-size: 13px;
+    position: relative; }
+    .profile .image-info .view-profile:after {
+      content: '>>';
+      position: absolute;
+      top: 0px;
+      right: -16px;
+      font-size: 10px; }
+  .profile .image-info .profile-info {
+    padding-top: 20px; }
+  .profile .section-header {
+    padding-bottom: 40px; }
+    .profile .section-header .profile-header {
+      color: #333333;
+      font-size: 38px; }
+    .profile .section-header .profile-paragraph {
+      color: #B2B2B2;
+      font-size: 26px; }
+
+.project {
+  padding: 50px 0px; }
+  @media screen and (min-width: 320px) {
+    .project .text-right {
+      text-align: center !important; } }
+  .project .profile-header {
+    color: #333333;
+    font-size: 20px; }
+  .project .profile-paragraph {
+    color: #D54346;
+    font-size: 66px;
+    line-height: 66px;
+    position: relative;
+    margin-right: 45px; }
+    @media screen and (min-width: 320px) {
+      .project .profile-paragraph {
+        font-size: 20px; } }
+    .project .profile-paragraph:after {
+      position: absolute;
+      content: ">>";
+      right: -72px;
+      font-size: 50px; }
+      @media screen and (min-width: 320px) {
+        .project .profile-paragraph:after {
+          display: none; } }
+  .project .profile-info {
+    width: 80%;
+    margin: 0 auto; }
+    .project .profile-info .user-name {
+      font-size: 20px;
+      color: #333333;
+      padding: 10px 0px; }
+    .project .profile-info .view-profile {
+      color: #B2B2B2;
+      font-size: 13px; }
+
+footer {
+  background-color: #D54346;
+  color: #ffffff;
+  padding: 0 10px; }
+  footer .footer-top {
+    padding: 10px 0px; }
+  footer .header {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 20px; }
+  footer a {
+    color: #631618;
+    font-size: 13px; }
+  footer p {
+    font-size: 13px; }
+  footer .blog {
+    padding-top: 20px; }
+  footer .footer-link {
+    padding: 0; }
+    footer .footer-link li {
+      list-style: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 2px;
+      position: relative; }
+      footer .footer-link li:before {
+        position: absolute;
+        content: '>>';
+        font-size: 5px;
+        color: #ffffff;
+        top: 38%; }
+      footer .footer-link li a {
+        font-size: 12px;
+        padding-left: 14px; }
+        footer .footer-link li a:hover {
+          color: initial; }
+  footer .contact {
+    padding: 20px 0px; }
+  footer .form-control {
+    border-radius: 0.25rem;
+    margin-bottom: 11px; }
+  footer .btn-submit {
+    background-color: #6b181a; }
+    footer .btn-submit:after {
+      display: none; }
+  footer .footer-bottom .row {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 21px 0px; }
+  footer .footer-bottom .copyright,
+  footer .footer-bottom .text-right {
+    font-size: 12px; }

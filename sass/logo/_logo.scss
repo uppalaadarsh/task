@@ -1,0 +1,62 @@
+.logo-section {
+  display: inline-flex;
+  width: 100%;
+  padding: 40px 0px;
+  .input-group {
+    width: 30%;
+    .btn-search {
+      border-radius: 0;
+    }
+  }
+  .logo {
+      position: relative;
+      width: 50%;
+      &:before {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 40px;
+        background-color: $logo-color;
+        z-index: -1;
+        top: 7%;
+        border-radius: 50%;
+        left: -4px;
+    }
+    .logo-text {
+      font-family: Georgia;
+      display: inline-block;
+      line-height: 24px;
+      vertical-align: bottom;
+      height: 22px;
+      font-size: 12px;
+      color: $grey;
+      padding-left: 11px;
+      border-left: 1px solid $grey;
+      margin-left: 23px;
+      @media only screen and (max-width: 640px) {
+        border-left: none;
+      }
+      @media only screen and (max-width: 320px) {
+        font-size: 8px;
+      }
+    }
+  }
+  .logo-section {
+    .btn {
+      @media screen and (min-width: 320px) {
+          font-size: 10px;
+      }
+    }
+  }
+  .btn-submit {
+    margin-top: 0;
+    height: 38px;
+    border-radius: 0;
+    &:after {
+        display: none;
+    }
+  }
+}
+.carousel {
+  margin-top: 40px;
+}

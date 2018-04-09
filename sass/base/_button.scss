@@ -1,0 +1,16 @@
+.btn-submit {
+  color: $white;
+  background: $logo-color;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: relative;
+  padding-right: 19px;
+  margin-top: 20px;
+  &:after {
+    position: absolute;
+    content: '>>';
+    right: 4px;
+    font-size: 10px;
+    top: 7px;
+  }
+}

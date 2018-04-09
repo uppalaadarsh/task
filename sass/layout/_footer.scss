@@ -1,0 +1,70 @@
+footer {
+  background-color: $logo-color;
+  color: $white;
+  padding: 0 10px;
+  .footer-top {
+    padding: 10px 0px;
+  }
+  .header {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+  a {
+    color: $footer;
+    font-size: 13px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .blog {
+    padding-top: 20px;
+  }
+  .footer-link {
+    padding: 0;
+    li {
+      list-style: none;
+      border-bottom: 1px solid  rgba(255, 255, 255, 0.1);
+      padding-bottom: 2px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '>>';
+        font-size: 5px;
+        color: $white;
+        top: 38%;
+      }
+      a {
+        font-size: 12px;
+        padding-left: 14px;
+        &:hover {
+          color: initial;
+        }
+      }
+    }
+  }
+  .contact {
+    padding: 20px 0px;
+  }
+  .form-control {
+    border-radius: 0.25rem;
+    margin-bottom: 11px;
+  }
+  .btn-submit {
+    background-color: $dark;
+    &:after {
+      display: none;
+    }
+  }
+  .footer-bottom {
+    .row {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      //margin: 0px -10px;
+      padding: 21px 0px;
+    }
+    .copyright,
+    .text-right {
+      font-size: 12px;
+    }
+  }
+}
